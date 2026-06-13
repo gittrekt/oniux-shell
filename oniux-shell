@@ -1,0 +1,9 @@
+#!/usr/bin/env fish
+
+set -gx IS_ONIUX_SESSION 1
+
+echo "🔒 Entering an isolated oniux shell session..."
+echo "Type 'exit' or press Ctrl+D to return to your normal host shell."
+echo "------------------------------------------------------------"
+
+exec oniux fish -i -P
